@@ -17,7 +17,7 @@ app.use(function(req, res, next) {
 });
 
 router.get('/', function (req, res){
-
+    res.send('')
 });
 
 app.use('/lovegos', router);
