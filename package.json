@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/loicb94/BackLovegos#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongodb": "^3.0.7",

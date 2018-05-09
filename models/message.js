@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const MessageSchema = mongoose.Schema({
-    texte_message: {
+    texteMessage: {
         type: String,
         required: true
     },
-    heure_envoie: {
+    heureEnvoi: {
         type: Date,
         required: true
     },
@@ -13,7 +13,7 @@ const MessageSchema = mongoose.Schema({
         type: user,
         required: true
     },
-    conversation_id:{
+    conversationId:{
         type: String,
         required: true
     },
