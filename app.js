@@ -2,7 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const router = express.Router();
 const Message = require('../models/message');
-const Conversation = reqquire('../models/conversation');
+const Conversation = require('../models/conversation');
+
+
+// import des routes
+
+const userRoutes = require ('./routes/user.js');
+const messageRoutes = require ('./routes/message.js');
 
 const app = express();
 
@@ -16,10 +22,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-router.get('/', function (req, res){
-    res.send('')
-});
-
-app.use('/lovegos', router);
+app.use("/lovegos/user", userRoutes);
+app.use("/lovegos/message", messageRoutes);
 
 module.exports=app;
