@@ -35,5 +35,5 @@ MessageSchema.statics.getMessageByConver = (id, callback) => {
     essage.find({conversation_id: id}, callback);
 };
 
-const Message = mongoose.model('Message', MessageSchema);
+const Message = mongoose.model('message', MessageSchema);
 module.exports = Message;

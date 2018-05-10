@@ -118,5 +118,5 @@ ConversationSchema.statics.getConversationByName = (partipant1, partipant2, call
     });
 };
 
-const Conversation = mongoose.model('Conversation', ConversationSchema);
+const Conversation = mongoose.model('conversation', ConversationSchema);
 module.exports = Conversation;
